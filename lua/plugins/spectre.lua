@@ -1,6 +1,6 @@
 return {
   "windwp/nvim-spectre",
-  requires = { "nvim-lua/plenary.nvim" },
+  dependencies = { "nvim-lua/plenary.nvim" },
   config = function()
     require("spectre").setup()
 

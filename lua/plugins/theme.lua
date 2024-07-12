@@ -4,12 +4,12 @@ return {
     "rebelot/kanagawa.nvim",
     config = function()
       require("kanagawa").setup {
-        transparent = true, -- 启用背景透明
+        -- transparent = true, -- 启用背景透明
         colors = {
           theme = {
             all = {
               ui = {
-                bg_gutter = "none",
+                -- bg_gutter = "none",
               },
             },
           },

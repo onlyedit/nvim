@@ -5,7 +5,7 @@ return {
   },
   { "nvim-telescope/telescope-file-browser.nvim" },
   { "nvim-telescope/telescope-github.nvim" },
-  { "nvim-telescope/telescope-frecency.nvim", requires = { "tami5/sqlite.lua" } },
+  { "nvim-telescope/telescope-frecency.nvim", dependences = { "tami5/sqlite.lua" } },
   { "nvim-lua/plenary.nvim" },
   {
     "ahmedkhalf/project.nvim",

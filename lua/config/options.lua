@@ -65,3 +65,6 @@ g.loaded_netrwPlugin = 1
 -- optionally enable 24-bit colour
 opt.termguicolors = true
 
+-- 显示不可见字符的设置
+vim.o.listchars = "eol:↵,lead:‧"
+vim.wo.list = true
