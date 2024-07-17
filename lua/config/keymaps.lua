@@ -21,3 +21,11 @@ vim.api.nvim_set_keymap("n", "<leader>bp", ":BufferLineTogglePin<CR>", { noremap
 vim.api.nvim_set_keymap("n", "<leader>bc", ":BufferLinePickClose<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>bm", ":BufferLineMoveNext<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>bM", ":BufferLineMovePrev<CR>", { noremap = true, silent = true })
+
+-- toggleterm terminal
+-- 绑定快捷键 leader key + t + f 打开浮动终端
+vim.api.nvim_set_keymap("n", "<leader>tf", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true })
+-- 绑定快捷键 leader key + t + v 打开垂直终端
+vim.api.nvim_set_keymap("n", "<leader>tv", ":ToggleTerm direction=vertical<CR>", { noremap = true, silent = true })
+-- 绑定快捷键 leader key + t + h 打开水平终端
+vim.api.nvim_set_keymap("n", "<leader>th", ":ToggleTerm direction=horizontal<CR>", { noremap = true, silent = true })
