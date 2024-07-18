@@ -1,7 +1,7 @@
 -- ~/.config/nvim/lua/plugins/bufferline.lua
 return {
   "akinsho/bufferline.nvim",
-  requires = "nvim-tree/nvim-web-devicons", -- 依赖插件，用于显示文件图标
+  dependencies = "nvim-tree/nvim-web-devicons", -- 依赖插件，用于显示文件图标
   config = function()
     require("bufferline").setup {
       options = {
