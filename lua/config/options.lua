@@ -2,9 +2,6 @@ local opt = vim.opt
 local o = vim.o
 local g = vim.g
 
--------------------------------------- globals -----------------------------------------
-g.toggle_theme_icon = "   "
-
 -------------------------------------- options ------------------------------------------
 o.laststatus = 3
 o.showmode = false
@@ -15,10 +12,10 @@ o.cursorlineopt = "number"
 
 -- Indenting
 o.expandtab = true
-o.shiftwidth = 4
+o.shiftwidth = 2
 o.smartindent = true
-o.tabstop = 4
-o.softtabstop = 4
+o.tabstop = 2
+o.softtabstop = 2
 
 opt.fillchars = { eob = " " }
 o.ignorecase = true
@@ -27,7 +24,7 @@ o.mouse = "a"
 
 -- Numbers
 o.number = true
-o.numberwidth = 4
+o.numberwidth = 2
 o.ruler = false
 
 -- disable nvim intro
@@ -46,8 +43,6 @@ o.updatetime = 250
 -- when cursor reaches end/beginning of line
 opt.whichwrap:append "<>[]hl"
 
--- g.mapleader = " "
-
 -- disable some default providers
 g.loaded_node_provider = 0
 g.loaded_python3_provider = 0
@@ -59,12 +54,3 @@ local is_windows = vim.fn.has "win32" ~= 0
 local sep = is_windows and "\\" or "/"
 local delim = is_windows and ";" or ":"
 vim.env.PATH = table.concat({ vim.fn.stdpath "data", "mason", "bin" }, sep) .. delim .. vim.env.PATH
-g.loaded_netrw = 1
-g.loaded_netrwPlugin = 1
-
--- optionally enable 24-bit colour
-opt.termguicolors = true
-
--- 显示不可见字符的设置
-vim.o.listchars = "eol:↵,lead:‧"
-vim.wo.list = true

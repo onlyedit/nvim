@@ -1,4 +1,3 @@
-require "config.lazy"
-require "config.options"
-require "config.autocmd"
-require "config.keymaps"
+require("config.options")
+require("config.lazy")
+require("config.coc_config")
